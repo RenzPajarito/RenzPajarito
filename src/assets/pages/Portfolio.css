@@ -1,0 +1,176 @@
+.portfolio-container {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 100fr 1fr;
+    grid-template-areas: 
+        "header"
+        "portfolioBox"
+        "footer"
+    ;
+    padding: 1em;
+    grid-gap: 0.7em;
+}
+
+.portfolio-container .portfolio-box {
+    position: relative;
+    grid-area: portfolioBox;
+    padding: 1em;
+    box-shadow: 5px 5px 15px #D1D9E6, -5px -5px 15px #ffffff;
+}
+
+.portfolio-container .portfolio-box > div {
+    position: relative;
+}
+
+.portfolio-container .portfolio-box > div > div {
+    background: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(0.5em);
+    padding: 1em 0;
+}
+
+.portfolio-container .portfolio-box > div:nth-child(1) {
+    background: url(../images/1port.jpg) no-repeat center;
+    background-size: cover;
+    opacity: 0;
+    animation-duration: 1s;
+    animation-name: child1;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+}
+
+@keyframes child1 {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.portfolio-container .portfolio-box > div:nth-child(2) {
+    background: url(../images/2port.jpg) no-repeat center;
+    background-size: cover;
+    opacity: 0;
+    animation-duration: 1s;
+    animation-name: child2;
+    animation-fill-mode: forwards;
+    animation-delay: 1.5s;
+}
+
+@keyframes child2 {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.portfolio-container .portfolio-box > div:nth-child(3) {
+    background: url(../images/3port.jpg) no-repeat center;
+    background-size: cover;
+    opacity: 0;
+    animation-duration: 1s;
+    animation-name: child3;
+    animation-fill-mode: forwards;
+    animation-delay: 2s;
+}
+
+@keyframes child3 {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.portfolio-container .portfolio-box > div:nth-child(4) {
+    background: url(../images/4port.jpg) no-repeat center;
+    background-size: cover;
+    opacity: 0;
+    animation-duration: 1s;
+    animation-name: child4;
+    animation-fill-mode: forwards;
+    animation-delay: 2.5s;
+}
+
+@keyframes child4 {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.portfolio-container .portfolio-box > div:nth-child(5) {
+    background: url(../images/5port.jpg) no-repeat center;
+    background-size: cover;
+    opacity: 0;
+    animation-duration: 1s;
+    animation-name: child5;
+    animation-fill-mode: forwards;
+    animation-delay: 3s;
+}
+
+@keyframes child5 {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.portfolio-container .portfolio-box > div:nth-child(6) {
+    background: url(../images/6port.jpg) no-repeat center;
+    background-size: cover;
+    opacity: 0;
+    animation-duration: 1s;
+    animation-name: child6;
+    animation-fill-mode: forwards;
+    animation-delay: 3.5s;
+}
+
+@keyframes child6 {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.portfolio-container .portfolio-box > div:nth-child(7) {
+    background: url(../images/7port.jpg) no-repeat center;
+    background-size: cover;
+    opacity: 0;
+    animation-duration: 1s;
+    animation-name: child7;
+    animation-fill-mode: forwards;
+    animation-delay: 4s;
+}
+
+@keyframes child7 {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .portfolio-container {
+        grid-template-rows: 1.8fr 30fr 1.8fr;
+    }
+    .portfolio-container .portfolio-box {
+        grid-template-columns: 1fr 1fr;
+    }
+    .portfolio-container .portfolio-box > div:nth-child(6) {
+        grid-row: span 2 / span 2;
+    }
+}

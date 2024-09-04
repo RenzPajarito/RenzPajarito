@@ -1,0 +1,125 @@
+.about-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 100fr 1fr;
+    grid-template-areas: 
+        "header header"
+        "box1 box2"
+        "footer footer"
+    ;
+    grid-gap: 0.7em;
+    padding: 1em;
+}
+
+.about-header, .about-footer, .box1, .box2 {
+    position: relative;
+    text-align: center;
+    box-shadow: 5px 5px 15px #D1D9E6, -5px -5px 15px #ffffff;
+    border-radius: var(--secondary-radius);
+    cursor: pointer;
+    transition: ease-in-out 0.1s;
+}
+
+.box1 {
+    grid-area: box1;
+    animation-duration: 0.9s;
+    animation-name: box1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes box1 {
+    0% {
+        position: relative;
+        left: -20em;
+        opacity: 0;
+    }
+    100% {
+        left: 0;
+        opacity: 1;
+    }
+}
+
+.box2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2em;
+    animation-duration: 0.9s;
+    animation-name: box2;
+    animation-fill-mode: forwards;
+}
+
+@keyframes box2 {
+    0% {
+        position: relative;
+        right: -20em;
+        opacity: 0;
+    }
+    100% {
+        right: 0;
+        opacity: 1;
+    }
+}
+
+.about-container .box2 > div > div:nth-child(1) {
+    width: 100%;
+    height: 100%;
+    background: url(../images/me5.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.about-container .box2 > div > div:nth-child(2) {
+    width: 100%;
+    height: 100%;
+    background: url(../images/me1.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.about-container .box2 > div > div:nth-child(3) {
+    width: 100%;
+    height: 100%;
+    background: url(../images/me2.jpg) no-repeat top;
+    background-size: cover;
+}
+
+.about-container .box2 > div > div:nth-child(4) {
+    width: 100%;
+    height: 100%;
+    background: url(../images/me3.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.header {
+    width: 100%;
+    grid-area: header;
+}
+
+.footer {
+    grid-area: footer;
+}
+
+@media only screen and (max-width: 900px) {
+    .about-container {
+        width: 100%;
+        height: 100%;
+        grid-template-columns: 1fr;
+        grid-template-rows: 20fr 20fr 2fr;
+        grid-template-areas:
+            /* "header" */
+            "box1"
+            "box2"
+            "footer"
+        ;
+    }
+
+    .about-container .box1 {
+        margin-top: 3em;
+    }
+
+    .about-container .box2 > div > div:nth-child(2) {
+        background-position: top;
+    }
+}

@@ -1,0 +1,88 @@
+.contact-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 100fr 1fr;
+    grid-template-areas: 
+        "header header"
+        "box1 box2"
+        "footer footer"
+    ;
+    grid-gap: 0.7em;
+    padding: 1em;
+}
+
+.contact-container .box1 {
+    grid-area: box1;
+    animation-duration: 0.9s;
+    animation-name: box1;
+    animation-fill-mode: forwards;
+    overflow: hidden;
+}
+
+@keyframes box1 {
+    0% {
+        position: relative;
+        left: -20em;
+        opacity: 0;
+    }
+    100% {
+        left: 0;
+        opacity: 1;
+    }
+}
+
+.contact-container .box2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2em;
+    animation-duration: 0.9s;
+    animation-name: box2;
+    animation-fill-mode: forwards;
+}
+
+@keyframes box2 {
+    0% {
+        position: relative;
+        right: -20em;
+        opacity: 0;
+    }
+    100% {
+        right: 0;
+        opacity: 1;
+    }
+}
+
+.header {
+    width: 100%;
+    grid-area: header;
+}
+
+.footer {
+    grid-area: footer;
+}
+
+@media only screen and (max-width: 900px) {
+    .contact-container {
+        width: 100%;
+        height: 100%;
+        grid-template-columns: 1fr;
+        grid-template-rows: 15fr 20fr 2fr;
+        grid-template-areas:
+            "box1"
+            "box2"
+            "footer"
+        ;
+    }
+
+    .header {
+        box-shadow: 0 1px 5px #acacac;
+    }
+
+    .box2 > div > div:nth-child(2) {
+        background-position: top;
+    }
+}

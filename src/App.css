@@ -1,0 +1,355 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif; 
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+#root {
+    --main-radius: 0.8rem;
+    --secondary-radius: 0.4rem;
+    --main-padding: 1rem;
+    --main-background: #ecf0f3;
+    background: var(--main-background);
+}
+
+body {
+    background: #ecf0f3;
+}
+
+.home-container {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 20fr 18fr 1fr;
+    grid-template-areas:
+        "header header header"
+        "about portfolio portfolio"
+        "skills services talent"
+        "footer footer footer"
+    ;
+    padding: var(--main-padding);
+    grid-gap: 0.7rem;
+    color: #282828;
+}
+
+.about,.portfolio,
+.skills,.service,.personal-talent {
+    position: relative;
+    text-align: center;
+    box-shadow: 5px 5px 15px #D1D9E6, -5px -5px 15px #ffffff;
+    border-radius: var(--secondary-radius);
+    transition: ease-in-out 0.1s;
+}
+
+.about:hover,
+.portfolio:hover,.skills:hover,
+.service:hover,.personal-talent:hover {
+    background: #fdfdfd;
+}
+
+.about {
+    grid-area: about;
+    animation-duration: 0.9s;
+    animation-name: about;
+    animation-fill-mode: forwards;
+}
+
+@keyframes about {
+    0% {
+        position: relative;
+        left: -20em;
+        opacity: 0;
+    }
+    100% {
+        left: 0;
+        opacity: 1;
+    }
+}
+
+.about .about-me::after {
+    content: '< click me!';
+    width: 7em;
+    position: absolute;
+    top: 0;left: 0;
+    font-size: 0.6em;
+    color: #383838;
+    opacity: 0;
+    transition: all ease 0.3s;
+}
+
+.about:hover .about-me::after {
+    left: 6em;
+    opacity: 1;
+}
+
+.about a {
+    transition: ease 0.2s;
+}
+
+.about a:hover {
+    transform: scale(1.1);
+}
+
+.portfolio {
+    grid-area: portfolio;
+    animation-duration: 1s;
+    animation-name: portfolio;
+    animation-fill-mode: forwards;
+}
+
+@keyframes portfolio {
+    0% {
+        position: relative;
+        right: -20em;
+        opacity: 0;
+    }
+    100% {
+        right: 0;
+        opacity: 1;
+    }
+}
+
+.portfolio > div > div:hover {
+    background: #00000010;
+}
+
+.overlay {
+    width: 0;
+    opacity: 0;
+    background: rgba(255, 80, 80, 0.75);
+    transition: all ease 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.portfolio > div > div:hover .overlay {
+    width: 100%;
+    opacity: 1;
+}
+
+.port4 .fs-portfolio-box {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.75);
+    backdrop-filter: blur(0.1em);
+    z-index: 10;
+    display: grid;
+    place-items: center;
+}
+
+.skills {
+    grid-area: skills;
+    animation-duration: 1.1s;
+    animation-name: skills;
+    animation-fill-mode: forwards;
+}
+
+@keyframes skills {
+    0% {
+        position: relative;
+        left: -20em;
+        opacity: 0;
+    }
+    100% {
+        left: 0;
+        opacity: 1;
+    }
+}
+
+.skills > div > div > div {
+    overflow: hidden;
+}
+
+.skills > div .html-progress, .css-progress, .js-progress, .react-progress, .tailwind-progress {
+    transition: all ease 0.3s;
+}
+
+.skills > div .html-progress:hover, .css-progress:hover, .js-progress:hover, .react-progress:hover, .tailwind-progress:hover {
+    transform: skewY(-5deg);
+}
+
+.skills > div .html::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    height: 100%;
+    background: #ff4848;
+    border-radius: var(--main-radius);
+    animation-duration: 1s;
+    animation-name: html;
+    animation-fill-mode: forwards;
+    animation-delay: 1.5s;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes html {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+.skills > div .css::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    height: 100%;
+    background: #ff4848;
+    border-radius: var(--main-radius);
+    animation-duration: 1s;
+    animation-name: css;
+    animation-fill-mode: forwards;
+    animation-delay: 1.8s;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes css {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 90%;
+    }
+}
+
+.skills > div .javascript::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    height: 100%;
+    background: #ff4848;
+    border-radius: var(--main-radius);
+    animation-duration: 1s;
+    animation-name: javascript;
+    animation-fill-mode: forwards;
+    animation-delay: 2.1s;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes javascript {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 70%;
+    }
+}
+
+.skills > div .react::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    height: 100%;
+    background: #ff4848;
+    border-radius: var(--main-radius);
+    animation-duration: 1s;
+    animation-name: react;
+    animation-fill-mode: forwards;
+    animation-delay: 2.4s;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes react {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 1%;
+    }
+}
+
+.skills > div .tailwind::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    height: 100%;
+    background: #ff4848;
+    border-radius: var(--main-radius);
+    animation-duration: 1s;
+    animation-name: tailwind;
+    animation-fill-mode: forwards;
+    animation-delay: 2.7s;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes tailwind {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 80%;
+    }
+}
+
+.service {
+    grid-area: services;
+    animation-duration: 1.2s;
+    animation-name: service;
+    animation-fill-mode: forwards;
+}
+
+@keyframes service {
+    0% {
+        position: relative;
+        bottom: -20em;
+        opacity: 0;
+    }
+    100% {
+        bottom: 0;
+        opacity: 1;
+    }
+}
+
+.personal-talent {
+    grid-area: talent;
+    animation-duration: 1.3s;
+    animation-name: talent;
+    animation-fill-mode: forwards;
+}
+
+@keyframes talent {
+    0% {
+        position: relative;
+        bottom: -20em;
+        opacity: 0;
+    }
+    100% {
+        bottom: 0;
+        opacity: 1;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .home-container {
+        height: 100%;
+        grid-template-columns: 1fr;
+        grid-template-rows: 20fr 20fr 18fr 18fr 18fr 2.5fr;
+        grid-template-areas:
+            "about"
+            "portfolio"
+            "skills"
+            "services"
+            "talent"
+            "footer"
+        ;
+    }
+}
