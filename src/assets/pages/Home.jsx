@@ -6,7 +6,7 @@ import Footer from '../components/Footer.jsx'
 import Coding from '../icons/coding.png'
 import Creative from '../icons/graphic-designer.png'
 import MobileDev from '../icons/mobile-development.png'
-import Port1 from '../images/1port.jpg'
+import Port1 from '../images/1port.png'
 import Port2 from '../images/2port.jpg'
 import Port3 from '../images/3port.jpg'
 import Port4 from '../images/4port.jpg'
@@ -62,8 +62,8 @@ function Home() {
             <img src={Port1} alt='Portfolio' className=' w-full h-full object-cover rounded-lg'/>
           </div>
           <div className='overlay w-full h-full absolute top-0 left-0 p-6'>
-            <h1 className='md:text-2xl text-xl font-semibold text-gray-300'>Title</h1>
-            <p className='md:text-lg text-sm text-left p-2 text-gray-300'>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+            <h1 className='md:text-2xl text-lg font-semibold text-gray-300'>Mortgage Calculator</h1>
+            <p className='md:text-lg text-sm text-left p-2 text-gray-300'>Mortgage Calculator app that calculates monthly payments based on.</p>
           </div>
         </div>
         <div className='port2 relative shadow-md p-3 cursor-pointer'>
