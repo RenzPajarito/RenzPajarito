@@ -3,7 +3,7 @@ import { useState } from 'react'
 import { GoScreenFull } from "react-icons/go"
 import Header from '../components/Header.jsx'
 import Footer from '../components/Footer.jsx'
-import Port1 from '../images/1port.jpg'
+import Port1 from '../images/1port.png'
 import Port2 from '../images/2port.jpg'
 import Port3 from '../images/3port.jpg'
 import Port4 from '../images/4port.jpg'
@@ -27,7 +27,7 @@ function Portfolio() {
 
   // Array of portfolios with titles and descriptions
   const portfolios = [
-    { id: 1, title: 'Portfolio 1', description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.', image: Port1 },
+    { id: 1, title: 'Mortgage Calculator', description: 'A React TypeScript Mortgage Calculator app that calculates monthly payments based on loan amount, term, interest rate, and mortgage type (Repayment or Interest Only).', image: Port1 },
     { id: 2, title: 'Portfolio 2', description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.', image: Port2 },
     { id: 3, title: 'Portfolio 3', description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.', image: Port3 },
     { id: 4, title: 'Portfolio 4', description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.', image: Port4 },
@@ -47,13 +47,13 @@ function Portfolio() {
                 className="absolute top-0 right-0 text-4xl p-1 bg-gray-100 cursor-pointer"
                 onClick={() => handleFullScreenClick(portfolio)}
               />
-              <div className="absolute bottom-0 w-full h-24">
+              <div className="absolute bottom-0 w-full h-24 grid items-center">
                 <h1 className="md:text-xl text-md font-semibold uppercase text-gray-200 text-center">
                   {portfolio.title}
                 </h1>
-                <p className="md:text-md text-xs font-medium text-gray-400 text-center">
+                {/* <p className="md:text-md text-xs font-medium text-gray-400 text-center">
                   {portfolio.description}
-                </p>
+                </p> */}
               </div>
             </div>
           ))}
