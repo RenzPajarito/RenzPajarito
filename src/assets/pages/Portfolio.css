@@ -31,7 +31,7 @@
 }
 
 .portfolio-container .portfolio-box > div:nth-child(1) {
-    background: url(../images/1port.jpg) no-repeat center;
+    background: url(../images/1port.png) no-repeat top;
     background-size: cover;
     opacity: 0;
     animation-duration: 1s;
