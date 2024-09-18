@@ -1,8 +1,29 @@
-# React + Vite
+# Hi, I'm Renz Pajarito! 👋
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+[![GitHub followers](https://img.shields.io/github/followers/renzpajarito?label=Follow&style=social)](https://github.com/renzpajarito)
+[![LinkedIn](https://img.shields.io/badge/-LinkedIn-blue?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/renzpajarito)
 
-Currently, two official plugins are available:
+## About Me
+I'm Renz, a passionate developer with a strong focus on **React**, **TypeScript**, and **Tailwind CSS**. I enjoy working on **front-end development** and creating dynamic, user-friendly applications.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Technologies I Work With:
+- **Frontend**: React, Tailwind CSS, TypeScript, JavaScript
+- **Backend**: Not explored much yet, but excited to learn!
+- **Tools**: Git, GitHub, VSCode, Figma
+- **Other Skills**: HTML, CSS, JavaScript
+
+### Current Projects:
+- **Portfolio Website**: Showcasing my work using React and Tailwind CSS.
+- **Student Assignment Tracker**: A website to help students keep track of their assignments.
+- **Chess Books App**: Browse and download chess books for free.
+
+### In Progress:
+- Exploring backend technologies and frameworks.
+- Learning advanced TypeScript patterns.
+
+## Get In Touch
+- **Portfolio**: [Your Portfolio Link](https://renz-pajarito.vercel.app)
+- **Email**: [your-email@example.com](mailto:zerncodes@gmail.com)
+- **LinkedIn**: [Your LinkedIn](https://www.linkedin.com/in/renzpajarito)
+
+Thanks for stopping by! Let's build something amazing together!
