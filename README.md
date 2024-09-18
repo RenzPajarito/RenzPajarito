@@ -22,8 +22,8 @@ I'm Renz, a passionate developer with a strong focus on **React**, **TypeScript*
 - Learning advanced TypeScript patterns.
 
 ## Get In Touch
-- **Portfolio**: [Your Portfolio Link](https://renz-pajarito.vercel.app)
-- **Email**: [your-email@example.com](mailto:zerncodes@gmail.com)
-- **LinkedIn**: [Your LinkedIn](https://www.linkedin.com/in/renzpajarito)
+- **Portfolio**: [Renz Pajarito](https://renz-pajarito.vercel.app)
+- **Email**: [Zern Codes](mailto:zerncodes@gmail.com)
+- **LinkedIn**: [Renz Pajarito](https://www.linkedin.com/in/renzpajarito)
 
 Thanks for stopping by! Let's build something amazing together!
