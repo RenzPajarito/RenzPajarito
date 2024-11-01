@@ -9,7 +9,7 @@ I'm Renz, a passionate developer with a strong focus on **React**, **TypeScript*
 ### Technologies I Work With:
 - **Frontend**: React, Tailwind CSS, TypeScript, JavaScript
 - **Backend**: Not explored much yet, but excited to learn!
-- **Tools**: Git, GitHub, VSCode
+- **Tools**: Git, GitHub, VSCode, Figma
 - **Other Skills**: HTML, CSS, JavaScript
 
 ### Current Projects:
