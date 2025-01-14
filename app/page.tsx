@@ -24,7 +24,7 @@ import {
   Talent,
 } from "@/types/types";
 import projectsData from "@/data/projects.json";
-import { incrementAndGetViews } from "./actions/action";
+import ViewCounter from "./actions/view-counter";
 
 const truncateText = (text: string, maxLength: number) => {
   if (text.length <= maxLength) return text;
@@ -32,8 +32,6 @@ const truncateText = (text: string, maxLength: number) => {
 };
 
 export default async function Component() {
-  await incrementAndGetViews();
-
   const socialLinks: SocialLink[] = [
     {
       href: "https://github.com/renzpajarito",
@@ -126,6 +124,8 @@ export default async function Component() {
   return (
     <div className="min-h-screen p-3 mx-auto space-y-2 bg-[#ecf0f3]">
       <Header />
+
+      <ViewCounter />
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-2">
         <Card className="h-fit min-h-[380px] bg-[#ecf0f3] relative shadow-sm border-white">

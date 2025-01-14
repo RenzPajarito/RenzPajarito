@@ -10,6 +10,7 @@ import { Facebook, Github, Linkedin, Mail, Send } from "lucide-react";
 import Header from "@/components/portfolio/header";
 import Footer from "@/components/portfolio/footer";
 import { SocialLink } from "@/types/types";
+import ViewCounter from "../actions/view-counter";
 
 export default function PortfolioContact() {
   const [name, setName] = useState("");
@@ -81,6 +82,9 @@ export default function PortfolioContact() {
   return (
     <div className="min-h-screen p-3 mx-auto space-y-2 bg-[#ecf0f3]">
       <Header />
+
+      <ViewCounter />
+
       <div className="container mx-auto sm:px-4 px-0 pt-2 pb-2 sm:py-8">
         <h1 className="text-4xl font-bold text-center mb-8 text-gray-700">
           Get in Touch

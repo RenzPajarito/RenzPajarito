@@ -16,7 +16,7 @@ import {
 } from "lucide-react";
 import Footer from "@/components/portfolio/footer";
 import Header from "@/components/portfolio/header";
-import { incrementAndGetViews } from "../actions/action";
+import ViewCounter from "../actions/view-counter";
 
 const detailedSkills = [
   {
@@ -50,11 +50,11 @@ const detailedSkills = [
 ];
 
 export default async function Skills() {
-  await incrementAndGetViews();
-
   return (
     <div className="min-h-screen p-3 mx-auto space-y-6 bg-[#ecf0f3]">
       <Header />
+
+      <ViewCounter />
 
       <main className="min-h-[705px] max-w-4xl mx-auto space-y-8 p-6">
         <h1 className="text-3xl font-bold text-gray-800 text-center mb-8">

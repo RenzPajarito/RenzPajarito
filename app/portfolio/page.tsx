@@ -7,6 +7,7 @@ import projectsData from "@/data/projects.json";
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
+import ViewCounter from "../actions/view-counter";
 
 /* eslint-disable-next-line @typescript-eslint/no-unused-vars */
 const truncateText = (text: string, maxLength: number) => {
@@ -28,6 +29,8 @@ export default function Portfolio() {
   return (
     <div className="min-h-screen p-3 mx-auto space-y-8 bg-[#ecf0f3]">
       <Header />
+
+      <ViewCounter />
 
       <main className="container min-h-[690px] mx-auto sm:px-4 px-2">
         <h1 className="text-3xl font-bold text-gray-800 mb-8">My Projects</h1>

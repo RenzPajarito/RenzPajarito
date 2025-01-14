@@ -5,6 +5,7 @@ import Footer from "@/components/portfolio/footer";
 import Header from "@/components/portfolio/header";
 import { Card } from "@/components/ui/card";
 import Image from "next/image";
+import ViewCounter from "../actions/view-counter";
 
 export default function About() {
   const images = [
@@ -16,6 +17,9 @@ export default function About() {
   return (
     <div className="min-h-screen p-3 mx-auto space-y-2 bg-[#ecf0f3]">
       <Header />
+
+      <ViewCounter />
+
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-2">
         <AboutMe />
 
