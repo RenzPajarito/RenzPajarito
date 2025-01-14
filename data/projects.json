@@ -1,0 +1,42 @@
+{
+  "portfolioProjects": [
+    {
+      "title": "Exam Quiz Master",
+      "image": "/project1.png",
+      "description": "Exam Quiz Master is a user-friendly web application for creating, managing, and taking quizzes.",
+      "link": "https://examquizmaster.vercel.app/",
+      "features": [
+        "Dashboard: Track created quizzes, total quizzes taken, average scores, and quiz results.",
+        "Quiz Creation: Create and manage multiple-choice quizzes with custom titles and descriptions.",
+        "Instant Feedback: Receive scores immediately upon submission, with a review option to see correct and incorrect answers.",
+        "Future updates will introduce AI-generated quizzes and sharable quiz links, enhancing accessibility and ease of use."
+      ],
+      "technologies": ["React", "Next.js", "TailwindCSS", "Firebase"]
+    },
+    {
+      "title": "Water Refilling MS",
+      "image": "/project2.jpg",
+      "description": "Water Refilling Management System is a management platform for water refilling stations, enabling sales tracking, jar type management, customizable sales reports, and system branding for efficient, streamlined operations.",
+      "link": "",
+      "features": [
+        "Sales Tracking: Record and monitor daily sales, including customer details, transaction type (walk-in/delivery), jar type, quantity, and payment status.",
+        "Jar Type Management: Add and update jar types and pricing for flexible inventory control.",
+        "Sales Reporting: View, filter, and print detailed sales reports by customer, type, and date range.",
+        "System Customization: Personalize the system with station branding, including name, short name, and logo."
+      ],
+      "technologies": ["HTML", "CSS", "JavaScript", "PHP", "MySQL"]
+    },
+    {
+      "title": "Barangay Management System",
+      "image": "/project3.png",
+      "description": "A web application that allows barangay officials to manage their records and services efficiently.",
+      "link": "",
+      "features": [
+        "Record management",
+        "Service management",
+        "User management"
+      ],
+      "technologies": ["HTML", "CSS", "JavaScript", "PHP", "MySQL"]
+    }
+  ]
+}
