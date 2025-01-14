@@ -1,7 +1,20 @@
+// ViewsPage.js
+"use client"; // Ensure this is a client component
+
+import { useEffect, useState } from "react";
 import { incrementAndGetViews } from "../actions/action";
 
-export default async function ViewsPage() {
-  const views = await incrementAndGetViews();
+export default function ViewsPage() {
+  const [views, setViews] = useState(0);
+
+  useEffect(() => {
+    const fetchViews = async () => {
+      const updatedViews = await incrementAndGetViews();
+      setViews(updatedViews);
+    };
+
+    fetchViews();
+  }, []);
 
   return (
     <div className="container h-screen mx-auto flex justify-center items-center px-6">
